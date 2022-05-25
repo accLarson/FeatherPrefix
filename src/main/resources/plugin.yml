@@ -1,0 +1,10 @@
+name: FeatherPrefix
+version: '${project.version}'
+main: com.zerek.featherprefix.FeatherPrefix
+api-version: 1.18
+depend: [ LuckPerms ]
+authors: [ Zerek ]
+description: Display roman numeral prefixes based on time played.
+commands:
+  prefix:
+    description: View prefix chart and check current hours.
