@@ -35,14 +35,12 @@ public class PrefixCommand implements CommandExecutor {
             if (args.length == 0){
                 displayChart(sender);
                 displayHours((Player) sender, (Player) sender);
-            }
-            else {
+            } else {
                 Player player = plugin.getServer().getPlayer(args[0]);
-                if ( !( player == null ) && player.isOnline() && !isVanished(player)){
+                if ( !( player == null ) && player.isOnline() && !isVanished(player) && !player.hasPermission("group.administrator")){
                     displayChart(sender);
                     displayHours((Player) sender, player);
-                }
-                else sender.sendMessage(ChatColor.of("#E4453A") + "Player not online");
+                } else sender.sendMessage(ChatColor.of("#E4453A") + "Player not found");
             }
         }
         else displayChart(sender);
