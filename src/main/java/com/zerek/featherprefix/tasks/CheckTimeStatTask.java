@@ -26,8 +26,8 @@ public class CheckTimeStatTask implements Runnable{
                 Integer minutes = p.getStatistic(Statistic.PLAY_ONE_MINUTE) / 20 / 60;
                 if (plugin.getConfigMap().containsKey(minutes) && plugin.getPlayTimeManager().getPlayTimeMap().containsKey(p)){
                     if (!minutes.equals(plugin.getPlayTimeManager().getPlayTimeMap().get(p))) {
-                        plugin.getConfigMap().get(minutes).get("console-commands").forEach(line -> plugin.getServer().dispatchCommand(plugin.getServer().getConsoleSender(), line.replace("<USERNAME>", p.getName())));
-                        plugin.getConfigMap().get(minutes).get("broadcasts").forEach(line -> plugin.getServer().broadcast(MiniMessage.miniMessage().deserialize(line, Placeholder.unparsed("USERNAME", p.getName()))));
+                        plugin.getConfigMap().get(minutes).get("console-commands").forEach(line -> plugin.getServer().dispatchCommand(plugin.getServer().getConsoleSender(), line.replace("<username>", p.getName())));
+                        plugin.getConfigMap().get(minutes).get("broadcasts").forEach(line -> plugin.getServer().broadcast(MiniMessage.miniMessage().deserialize(line, Placeholder.unparsed("username", p.getName()))));
                     }
                 }
             }
