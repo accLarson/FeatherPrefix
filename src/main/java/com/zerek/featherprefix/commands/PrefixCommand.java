@@ -48,10 +48,8 @@ public class PrefixCommand implements CommandExecutor {
     }
 
     public void displayChart(CommandSender s){
-        TextComponent more = (TextComponent) MiniMessage.miniMessage().deserialize("<#f2727e>MORE");
-        more = more.hoverEvent(HoverEvent.showText(MiniMessage.miniMessage().deserialize("<#656b96>Prefix<gray>: <dark_red>X<dark_gray>I     <dark_red>X<dark_gray>II     <dark_red>X<dark_gray>III   <dark_red>X<dark_gray>IV    <dark_red>X<dark_gray>V     <dark_red>X<dark_gray>VI    <dark_red>X<dark_gray>VII   <dark_red>X<dark_gray>VIII  <dark_red>X<dark_gray>IX    <dark_red>XX\n<#656b96>Hours<gray>: <#949bd1>2001  2008  2020  2045  2090  2170  2320  2580  3090  4000")));
-        s.sendMessage(MiniMessage.miniMessage().deserialize("<#656b96>Prefix<gray>: <dark_gray>I  II  III  IV  V    VI    VII   VIII  IX      <dark_red>X        ").append(more));
-        s.sendMessage(MiniMessage.miniMessage().deserialize("<#656b96>Hours<gray>: <#949bd1>1  8  20  45  90  170  320  580  1090   2000"));
+        s.sendMessage(MiniMessage.miniMessage().deserialize("<#656b96>Prefix<gray>: <dark_gray>I   II   III   IV   V     VI     VII    VIII   IX      <dark_red>X"));
+        s.sendMessage(MiniMessage.miniMessage().deserialize("<#656b96>Hours<gray>: <#949bd1>1   8   20   45   90   170   320   580   1090   2000"));
     }
 
     public void displayHours(Player requester, Player p){
