@@ -22,6 +22,7 @@ public class PlayTimeManager {
     public void removePlayer(Player p) {
         this.playTimeMap.remove(p);
     }
+
     public HashMap<Player, Integer> getPlayTimeMap() {
         return playTimeMap;
     }
