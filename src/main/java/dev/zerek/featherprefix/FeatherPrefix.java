@@ -2,8 +2,7 @@ package dev.zerek.featherprefix;
 
 import dev.zerek.featherprefix.commands.PrefixCommand;
 import dev.zerek.featherprefix.listeners.PlayerJoinListener;
-import dev.zerek.featherprefix.listeners.PlayerQuitListener;
-import dev.zerek.featherprefix.managers.PlayTimeManager;
+import dev.zerek.featherprefix.managers.PrefixManager;
 import dev.zerek.featherprefix.tasks.CheckTimeStatTask;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -12,13 +11,13 @@ import java.util.List;
 
 public final class FeatherPrefix extends JavaPlugin {
 
-    private PlayTimeManager playTimeManager;
+    private PrefixManager prefixManager;
     private final HashMap<Integer, HashMap<String, List<String>>> configMap = new HashMap<>();
 
     @Override
     public void onEnable() {
         saveDefaultConfig();
-        playTimeManager = new PlayTimeManager(this);
+        prefixManager = new PrefixManager(this);
         getConfig().getKeys(false).forEach(m -> {
             HashMap<String, List<String>> actions = new HashMap<>();
             actions.put("console-commands",getConfig().getStringList(m + ".console-commands"));
@@ -27,16 +26,18 @@ public final class FeatherPrefix extends JavaPlugin {
         });
         this.getCommand("prefix").setExecutor(new PrefixCommand(this));
         this.getServer().getPluginManager().registerEvents(new PlayerJoinListener(this),this);
-        this.getServer().getPluginManager().registerEvents(new PlayerQuitListener(this),this);
-        getServer().getScheduler().scheduleSyncRepeatingTask(this, new CheckTimeStatTask(this), 0L, 1200L);
+        getServer().getScheduler().scheduleSyncRepeatingTask(this, new CheckTimeStatTask(this), 0L, 1000L);
     }
+
     @Override
     public void onDisable() {
         // Plugin shutdown logic
     }
-    public PlayTimeManager getPlayTimeManager() {
-        return playTimeManager;
+
+    public PrefixManager getPrefixManager() {
+        return prefixManager;
     }
+
     public HashMap<Integer, HashMap<String, List<String>>> getConfigMap() {
         return configMap;
     }

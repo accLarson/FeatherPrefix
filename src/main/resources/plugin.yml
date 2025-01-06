@@ -8,3 +8,6 @@ description: Display roman numeral prefixes based on time played.
 commands:
   prefix:
     description: View prefix chart and check current hours.
+permissions:
+  feather.prefix.track:
+    default: false
