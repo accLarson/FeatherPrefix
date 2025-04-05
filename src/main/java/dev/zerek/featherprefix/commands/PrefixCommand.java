@@ -48,8 +48,8 @@ public class PrefixCommand implements CommandExecutor {
     }
 
     public void displayChart(CommandSender s){
-        s.sendMessage(MiniMessage.miniMessage().deserialize("<#656b96>Prefix<gray>: <dark_gray>I   II   III   IV   V     VI     VII    VIII   IX      <dark_red>X"));
-        s.sendMessage(MiniMessage.miniMessage().deserialize("<#656b96>Hours<gray>: <#949bd1>1   8   20   45   90   170   320   580   1090   2000"));
+        s.sendMessage(MiniMessage.miniMessage().deserialize("<#656b96>Prefix<gray>: <dark_gray>I   II   III   IV   V     VI     VII    VIII   IX      <dark_red>X    Y"));
+        s.sendMessage(MiniMessage.miniMessage().deserialize("<#656b96>Hours<gray>: <#949bd1>1   8   20   45   90   170   320   580   1090   2k   5k"));
     }
 
     public void displayHours(Player requester, Player p){
