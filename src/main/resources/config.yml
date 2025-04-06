@@ -52,70 +52,21 @@
     - "<white>• <#949bd1><username> <#656b96>has earned prefix <#949bd1>IX<#656b96>!"
   console-commands:
     - "lp user <username> parent settrack prefix ix"
-# prefix 10 - 2000 hours
+# prefix X - 2000 hours
 120000:
   broadcasts:
-    - "<white>• <#949bd1><username> <#656b96>has earned prefix <#949bd1>X<#656b96>!"
+    - "<white>• <#949bd1><username> <#656b96>has earned prefix <DARK_RED>X<#656b96>!"
   console-commands:
     - "lp user <username> parent settrack prefix x"
-## prefix 11 - 2001 hours
-#120060:
-#  broadcasts:
-#    - "<white>• <#949bd1><username> <#656b96>has earned prefix <#949bd1>XI<#656b96>!"
-#  console-commands:
-#    - "lp user <username> parent settrack prefix xi"
-## prefix 12 - 2008 hours
-#120480:
-#  broadcasts:
-#    - "<white>• <#949bd1><username> <#656b96>has earned prefix <#949bd1>XII<#656b96>!"
-#  console-commands:
-#    - "lp user <username> parent settrack prefix xii"
-## prefix 13 - 2020 hours
-#121200:
-#  broadcasts:
-#    - "<white>• <#949bd1><username> <#656b96>has earned prefix <#949bd1>XIII<#656b96>!"
-#  console-commands:
-#    - "lp user <username> parent settrack prefix xiii"
-## prefix 14 - 2045 hours
-#122700:
-#  broadcasts:
-#    - "<white>• <#949bd1><username> <#656b96>has earned prefix <#949bd1>XIV<#656b96>!"
-#  console-commands:
-#    - "lp user <username> parent settrack prefix xiv"
-## prefix 15 - 2090 hours
-#125400:
-#  broadcasts:
-#    - "<white>• <#949bd1><username> <#656b96>has earned prefix <#949bd1>XV<#656b96>!"
-#  console-commands:
-#    - "lp user <username> parent settrack prefix xv"
-## prefix 16 - 2170 hours
-#130200:
-#  broadcasts:
-#    - "<white>• <#949bd1><username> <#656b96>has earned prefix <#949bd1>XVI<#656b96>!"
-#  console-commands:
-#    - "lp user <username> parent settrack prefix xvi"
-## prefix 17 - 2320 hours
-#139200:
-#  broadcasts:
-#    - "<white>• <#949bd1><username> <#656b96>has earned prefix <#949bd1>XVII<#656b96>!"
-#  console-commands:
-#    - "lp user <username> parent settrack prefix xvii"
-## prefix 18 - 2580 hours
-#154800:
-#  broadcasts:
-#    - "<white>• <#949bd1><username> <#656b96>has earned prefix <#949bd1>XVIII<#656b96>!"
-#  console-commands:
-#    - "lp user <username> parent settrack prefix xviii"
-## prefix 19 - 3090 hours
-#185400:
-#  broadcasts:
-#    - "<white>• <#949bd1><username> <#656b96>has earned prefix <#949bd1>XIX<#656b96>!"
-#  console-commands:
-#    - "lp user <username> parent settrack prefix xix"
-## prefix 20 - 4000 hours
-#240000:
-#  broadcasts:
-#    - "<white>• <#949bd1><username> <#656b96>has earned prefix <#949bd1>XX<#656b96>!"
-#  console-commands:
-#    - "lp user <username> parent settrack prefix xx"
-#
+# prefix Y - 5000 hours
+300000:
+  broadcasts:
+    - "<white>• <#949bd1><username> <#656b96>has earned prefix <DARK_RED>Y<#656b96>!"
+  console-commands:
+    - "lp user <username> parent settrack prefix y"
+# prefix Z - 15000 hours
+900000:
+  broadcasts:
+    - "<white>• <#949bd1><username> <#656b96>has earned prefix <DARK_RED>Z<#656b96>!"
+  console-commands:
+    - "lp user <username> parent settrack prefix z"
