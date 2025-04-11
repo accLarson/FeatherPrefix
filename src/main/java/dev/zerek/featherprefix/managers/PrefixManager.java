@@ -16,7 +16,7 @@ public class PrefixManager {
 
     public PrefixManager(FeatherPrefix plugin) {
         this.plugin = plugin;
-        this.prefixGroups = Arrays.asList("i", "ii", "iii", "iv", "v", "vi", "vii", "viii", "ix", "x");
+        this.prefixGroups = Arrays.asList("i", "ii", "iii", "iv", "v", "vi", "vii", "viii", "ix", "x", "y", "z");
     }
 
     public void ensureCorrectPrefix(Player player, int minutes) {
