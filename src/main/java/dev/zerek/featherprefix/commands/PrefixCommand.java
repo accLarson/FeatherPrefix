@@ -53,7 +53,9 @@ public class PrefixCommand implements CommandExecutor {
     }
 
     public void displayHours(Player requester, Player p){
-        int hours = p.getStatistic(Statistic.PLAY_ONE_MINUTE)/20/60/60;
-        requester.sendMessage(ChatColor.of("#949bd1") + p.getName() + ChatColor.of("#656b96") + " Hours: " + ChatColor.of("#949bd1") + hours);
+        int totalMinutes = p.getStatistic(Statistic.PLAY_ONE_MINUTE)/20/60;
+        int hours = totalMinutes / 60;
+        int minutes = totalMinutes % 60;
+        requester.sendMessage(ChatColor.of("#949bd1") + p.getName() + ChatColor.of("#656b96") + " Time: " + ChatColor.of("#949bd1") + hours + "h " + minutes + "m");
     }
 }
